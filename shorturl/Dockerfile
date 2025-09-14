@@ -8,4 +8,5 @@ RUN chmod +x ./mvnw
 
 RUN ./mvnw clean package -DskipTests
 
-CMD ["java", "-jar", "target/*.jar"]
+# Change this line to use the exact JAR file name
+CMD ["java", "-jar", "target/shorturl-0.0.1-SNAPSHOT.jar"]
